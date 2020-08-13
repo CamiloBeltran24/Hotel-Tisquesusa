@@ -1,0 +1,56 @@
+@import "_variables.scss";
+@import "_animatios.scss";
+@import "_mixins.scss";
+
+.servicess {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/entrance.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  .texto {
+    width: 100%;
+    // height: 300px;
+    color: #fff;
+    .title {
+      width: 100%;
+      text-align: center;
+      font-size: $titlesize;
+    }
+    .subtext {
+      width: 100%;
+      font-size: 1.3em;
+      .firstLine,
+      .secondLine {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    }
+  }
+}
+.secure {
+  width: 100%;
+  p {
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: $textsize;
+    margin-top: 30px;
+  }
+  figure {
+    width: 230px;
+    margin: 35px auto;
+    img {
+      width: 100%;
+      border: 1px solid #000;
+    }
+  }
+}

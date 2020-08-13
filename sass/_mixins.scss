@@ -1,0 +1,12 @@
+@mixin fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+@mixin hideMenu {
+  animation-name: hideMenu;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}

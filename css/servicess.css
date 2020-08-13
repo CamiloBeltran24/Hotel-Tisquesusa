@@ -1,0 +1,70 @@
+@keyframes fadeInLeft {
+  from {
+    transform: translate(-100);
+  }
+  to {
+    transform: translate(100%);
+  }
+}
+@keyframes hideMenu {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(-100);
+  }
+}
+.servicess {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/entrance.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.servicess .texto {
+  width: 100%;
+  color: #fff;
+}
+.servicess .texto .title {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+.servicess .texto .subtext {
+  width: 100%;
+  font-size: 1.3em;
+}
+.servicess .texto .subtext .firstLine,
+.servicess .texto .subtext .secondLine {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.secure {
+  width: 100%;
+}
+.secure p {
+  width: 100%;
+  padding: 18px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.secure figure {
+  width: 230px;
+  margin: 35px auto;
+}
+.secure figure img {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+/*# sourceMappingURL=servicess.css.map */

@@ -1,0 +1,17 @@
+@keyframes fadeInLeft {
+  from {
+    transform: translate(-100);
+  }
+  to {
+    transform: translate(100%);
+  }
+}
+
+@keyframes hideMenu {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(-100);
+  }
+}
