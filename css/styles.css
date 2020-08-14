@@ -57,6 +57,10 @@ header {
   animation-fill-mode: both;
 }
 
+.menu-desktop {
+  display: none;
+}
+
 .menu-mobile {
   width: 100%;
   height: 100vh;
@@ -151,7 +155,8 @@ header {
   width: 100%;
   border: 2pc solid #000;
 }
-.container footer {
+
+footer {
   width: 100%;
   background-color: #373f51;
   color: #fff;
@@ -163,27 +168,27 @@ header {
   font-style: italic;
   margin-top: 20px;
 }
-.container footer p {
+footer p {
   margin: 5px 0;
 }
-.container footer .footer_redes_sociales {
+footer .footer_redes_sociales {
   margin: auto;
 }
-.container footer .footer_redes_sociales a {
+footer .footer_redes_sociales a {
   display: inline-block;
   padding: 10px;
   border-radius: 5px;
   margin: 10 px 0;
 }
-.container footer .footer_redes_sociales a i {
+footer .footer_redes_sociales a i {
   color: #fff;
   font-size: 40px;
   margin: 0 20px;
 }
-.container footer .footer_redes_sociales .instagram:hover {
+footer .footer_redes_sociales .instagram:hover {
   background-color: #f77737;
 }
-.container footer .footer_redes_sociales .facebook:hover {
+footer .footer_redes_sociales .facebook:hover {
   background-color: #3b5998;
 }
 
@@ -200,6 +205,112 @@ hr {
   text-align: center;
   padding: 0 20px;
   font-size: 18px;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    width: 100%;
+    background-color: #008ed5;
+    height: 100px;
+    background-image: none;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .menu-desktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  .menu-desktop h2 {
+    color: #f2f2f2;
+    font-size: 40px;
+    font-family: "Grand Hotel", cursive;
+  }
+  .menu-desktop ul {
+    width: 40%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-desktop ul li {
+    list-style: none;
+  }
+  .menu-desktop ul li:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .menu-desktop ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Roboto";
+    padding: 5px;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .container h1,
+.container h2 {
+    font-size: 30px;
+  }
+  .container .description p {
+    font-size: 22px;
+  }
+  .container .instalaciones {
+    position: relative;
+  }
+  .container .instalaciones .slider img {
+    height: 500px;
+    border-radius: 10px;
+  }
+  .container .instalaciones .arrows {
+    position: absolute;
+    width: 100%;
+    top: 255px;
+  }
+  .container .instalaciones .arrows .leftArrow {
+    position: relative;
+    left: -290px;
+    text-shadow: 5px 5px 8px rgba(51, 49, 49, 0.795);
+  }
+  .container .instalaciones .arrows .rightArrow {
+    position: relative;
+    right: -290px;
+    text-shadow: 5px 5px 8px rgba(51, 49, 49, 0.795);
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+  }
+  footer p:nth-child(3) {
+    width: 100%;
+    padding-top: 5px;
+  }
+  footer p {
+    text-align: center;
+    padding: 5px;
+  }
+  footer small {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    font-size: 12px;
+    text-decoration: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
